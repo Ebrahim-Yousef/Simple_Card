@@ -1,0 +1,88 @@
+:root {
+  --bg-color: #05152c;
+  --card-color: #051a39;
+  --text-color: white;
+  --accent-color: #00fffb;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background-color 1s ease;
+}
+
+.card {
+  background-color: var(--card-color);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid var(--accent-color);
+  margin-bottom: 15px;
+  transition: transform 0.8s ease;
+}
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  color: #00719d;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.bio {
+  font-size: 14px;
+  color: #0000a5;
+  margin-bottom: 20px;
+}
+
+.social a {
+  margin: 0 10px;
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.social a:hover {
+  color: #00b3b0;
+}
+
+button {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #006968;
+}
+
+h1 {
+  color: rgb(235, 233, 255);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
